@@ -1,11 +1,12 @@
-import React from 'react';
-import './App.css';
+import GlobalStyle from './styles/global';
+import Posts from './features/posts/Posts';
 
 const App = () => {
   return (
-    <div>
-      hello
-    </div>
+    <>
+      <GlobalStyle />
+      <Posts />
+    </>
   );
 }
 
