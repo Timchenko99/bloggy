@@ -25,7 +25,7 @@ npm start
 
 ![Screenshot](https://raw.githubusercontent.com/Timchenko99/bloggy/master/screen/Screenshot_1.png)
 
-The design is inspired by beautiful works of David A.
+The design is inspired by beautiful works of [David A.](https://codepen.io/meodai)
 
 ## Available Scripts
 
