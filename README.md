@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Requirements
 
 To run this app you need to install next tools:
--NodeJS v17.6.0
+- NodeJS v17.6.0
 
 ## Installation
 
