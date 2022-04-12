@@ -15,6 +15,21 @@ Before running the app install all dependencies!:
 npm install
 ```
 
+## Setting up
+
+After successfully installing all dependencies create .env file at root level (bloggy/.env) or change the .env.example file to just .env
+
+In your .env file you need to type next:
+
+```
+REACT_APP_API_URL="[insert_your_base_url]"
+```
+> [insert_your_base_url] is your real world api like "https://jsonplaceholder.typicode.com"
+
+The above parameter will be used as base url for all requests.
+
+## Running the app
+
 Create React App uses Webpack under the hood so you can run this app just by running: 
 
 ```

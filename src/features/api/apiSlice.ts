@@ -4,7 +4,7 @@ import { IPost } from '../../types';
 export const apiSlice = createApi({
     reducerPath: 'api',
     baseQuery: fetchBaseQuery({
-        baseUrl: 'https://bloggy-api.herokuapp.com'
+        baseUrl: process.env.REACT_APP_API_URL
     }),
     tagTypes: ['Post', 'Comment'],
     endpoints: builder => ({
