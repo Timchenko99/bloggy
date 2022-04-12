@@ -2,6 +2,31 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Requirements
+
+To run this app you need to install next tools:
+-NodeJS v17.6.0
+
+## Installation
+
+Before running the app install all dependencies!:
+
+```
+npm install
+```
+
+Create React App uses Webpack under the hood so you can run this app just by running: 
+
+```
+npm start
+```
+
+## App Design
+
+![Screenshot](https://raw.githubusercontent.com/Timchenko99/bloggy/master/screen/Screenshot_1.png)
+
+The design is inspired by beautiful works of David A.
+
 ## Available Scripts
 
 In the project directory, you can run:
