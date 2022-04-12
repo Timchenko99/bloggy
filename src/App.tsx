@@ -1,12 +1,13 @@
 import GlobalStyle from './styles/global';
-import Posts from './features/posts/Posts';
+import IndexRouter from './routes';
+import { Box } from './components/index'
 
 const App = () => {
   return (
-    <>
+    <Box>
       <GlobalStyle />
-      <Posts />
-    </>
+      <IndexRouter />
+    </Box>
   );
 }
 

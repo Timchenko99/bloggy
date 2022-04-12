@@ -5,19 +5,18 @@ export const Button = styled.button`
     border-radius: 3px;
     font-family: 'Roboto', sans-serif;
     padding: 0.5rem 0;
-    margin: 0.5rem 1rem;
     width: 11rem;
-    border: 2px solid white;
+    margin-bottom: 0.5rem;
+    border: 2px solid black;
+    font-weight: bold;
+    margin-right: 1rem;
+
+    &:hover{
+        cursor: pointer;
+        background-color: var(--color-signal);
+    }
 `
 
-export const CreateButton = styled(Button)`
-    background: #f70003;
-`
-
-export const DeleteButton = styled(Button)`
-    background: #f70003;
-`
-
-export const EditButton = styled(Button)`
-    background: #f70003;
+export const AccentButton = styled(Button)`
+    background: var(--color-signal);
 `

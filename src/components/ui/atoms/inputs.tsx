@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Input = styled.input`
+export const StyledInput = styled.input`
     font-family: 'Roboto', sans-serif;
     padding: 0.5rem 0.2rem;
 
@@ -9,6 +9,6 @@ export const Input = styled.input`
     border: 3px solid currentColor;
     padding: calc(var(--size-bezel) * 1.5) var(--size-bezel);
     color: currentColor;
-    background: transparent;
     border-radius: var(--size-radius);
+    margin-bottom: 1rem;
 `

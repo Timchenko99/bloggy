@@ -1,9 +1,21 @@
-import React from 'react'
-import { Form } from '../index'
+import { useAddNewPostMutation } from '../../features/api/apiSlice'
+import { PostsForm, Card } from '../index'
 
 const NewPost = () => {
+  const [addNewPost, { isLoading }] = useAddNewPostMutation()
+
+  const handleNewPost = async (title: string, body: string) => {
+    try {
+      await addNewPost({title, body }).unwrap();
+    } catch (error) {
+      console.error("Failed to create post", error)
+    }
+  }
+
   return (
-    <Form />
+    <Card>
+      <PostsForm onSubmit={handleNewPost}/>
+    </Card>
   )
 }
 

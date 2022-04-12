@@ -10,10 +10,11 @@ export const apiSlice = createApi({
     endpoints: builder => ({
         getPosts: builder.query({
             query: () => '/posts',
-            providesTags: ['Post', 'Comment']
+            providesTags: ['Post']
         }),
-        getPost: builder.query({
-            query: postId => `/posts/${postId}?_embed=comments`
+        getPost: builder.query<IPost, any>({
+            query: postId => `/posts/${postId}?_embed=comments`,
+            providesTags: ['Post','Comment']
         }),
         addNewPost: builder.mutation({
             query: initialPost => ({
@@ -34,7 +35,9 @@ export const apiSlice = createApi({
                     'content-type': 'application/json'
                 },
                 body: post
-            })
+            }),
+            invalidatesTags: ['Post']
+
         }),
         deletePost: builder.mutation<any, number>({
             query: postId => ({
@@ -43,7 +46,9 @@ export const apiSlice = createApi({
                 headers: {
                     'content-type': 'application/json'
                 }
-            })
+            }),
+            invalidatesTags: ['Post']
+
         }),
         addNewComment: builder.mutation({
             query: initialComment => ({
@@ -53,7 +58,9 @@ export const apiSlice = createApi({
                     'content-type': 'application/json'
                 },
                 body: initialComment
-            })
+            }),
+            invalidatesTags: ['Comment']
+
         })
     })
 })
