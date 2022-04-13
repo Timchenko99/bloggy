@@ -38,7 +38,7 @@ const PostsForm = ({ onSubmit }: PostProps) => {
     const inputsAreInvalid = validateInputs();
     if(inputsAreInvalid) return;
     
-    //onSubmit(inputText, textAreaText);
+    onSubmit(inputText, textAreaText);
     clearInput();
   }
 
